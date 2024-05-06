@@ -15,11 +15,116 @@ body {
   font-size: 1.6rem;
 }
 
+p {
+  margin: 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0 2rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 :root {
   --font-family: "Roboto", sans-serif;
   --text: #F1F1F1;
   --background:#0F0F0F;
   --seconde: #222222;
+  --search-bar:#121212;
+  --border:#303030;
+  --search-bar-text:#888080;
+}
+
+header .header-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid black;
+}
+header .header-container .start {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+header .header-container .start img {
+  width: 170px;
+  padding: 0 2rem;
+}
+header .header-container .center {
+  display: flex;
+  flex-flow: row;
+}
+header .header-container .center .search-bar > input:nth-child(1) {
+  padding-left: 1.8rem;
+}
+header .header-container .center .search-bar {
+  display: flex;
+  flex-flow: row;
+  padding: 0 1.7rem;
+}
+header .header-container .center .search-bar input {
+  width: 550px;
+  height: 40px;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background: var(--search-bar);
+  border: 1px solid var(--border);
+}
+header .header-container .center .search-bar input::placeholder {
+  color: var(--search-bar-text);
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding-left: 2rem;
+  margin-left: 2rem;
+}
+header .header-container .center .search-bar .search-button button {
+  width: 60px;
+  height: 40px;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background: var(--seconde);
+  border: 1px solid var(--border);
+}
+header .header-container .center .search-bar .search-button button i {
+  color: var(--text);
+}
+header .header-container .center .voice-button button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: var(--seconde);
+  border: 0;
+}
+header .header-container .center .voice-button button i {
+  color: var(--text);
+}
+header .header-container .end {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+header .header-container .end .profil {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: var(--seconde);
+  margin: 0 1rem;
+}
+header .header-container .end i {
+  margin: 0 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

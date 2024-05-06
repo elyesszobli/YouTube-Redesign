@@ -1,3 +1,101 @@
 @use "reset" as *;
 @use "base" as *;
 @use "variable" as *;
+
+header{
+    .header-container{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid black;
+       
+        .start{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            img{
+                width: 170px;
+                padding: 0 2rem;
+            }
+        }
+        .center{
+            display: flex;
+            flex-flow: row;
+            .search-bar > input:nth-child(1) {
+                padding-left: 1.8rem;
+            }
+
+            .search-bar{
+                display: flex;
+                flex-flow: row;
+                padding: 0 1.7rem;
+                input{
+                    width: 550px;
+                    height: 40px;
+                    border-top-left-radius: 2rem;
+                    border-bottom-left-radius: 2rem;
+                    background: var(--search-bar);
+                    border: 1px solid var(--border);
+                    &::placeholder{
+                        color: var(--search-bar-text);
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        padding-left: 2rem;
+                        margin-left: 2rem;
+                    }
+                }
+                
+                .search-button{
+                    
+                    
+                    button{
+                        width: 60px;
+                        height: 40px;
+                        border-top-right-radius: 2rem;
+                        border-bottom-right-radius: 2rem;
+                        background: var(--seconde);
+                        border: 1px solid var(--border);
+                        
+                        i{
+                            color: var(--text);
+                        }
+                    }
+                }
+
+            }
+
+            .voice-button{
+                button{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50px;
+                    background: var(--seconde);
+                    border: 0;
+                    i{
+                        color: var(--text);
+                    }
+                }
+            }
+        }
+        .end{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+
+            .profil{
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+                background: var(--seconde);
+                margin: 0 1rem;
+                
+            }
+            i{
+                margin: 0 1rem;
+            }
+        }
+    }
+    
+}
