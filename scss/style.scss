@@ -99,3 +99,39 @@ header{
     }
     
 }
+
+.container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 250px auto;
+    grid-template-areas: "aside main";
+
+}
+
+aside{
+    grid-area: aside;
+    .aside-top{
+        display: flex;
+        flex-flow: column;
+        
+        border-bottom: 1px solid var(--border);
+        img{
+            width: 25px;
+            height: 20px;
+        }
+        div{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            img , i , p{
+                margin: 1.2rem 1.8rem;
+            }
+        }
+        div:last-child{
+            margin-bottom: 1rem;
+        }
+    }
+}
+main{
+    grid-area: main;
+}
