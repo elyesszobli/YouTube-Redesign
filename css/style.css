@@ -46,6 +46,10 @@ img {
   --search-bar-text:#888080;
 }
 
+.title {
+  font-weight: 600;
+}
+
 header .header-container {
   display: flex;
   flex-flow: row;
@@ -137,24 +141,33 @@ header .header-container .end i {
 aside {
   grid-area: aside;
 }
-aside .aside-top {
+aside h3 {
+  padding: 0rem 2rem;
+}
+aside .aside {
   display: flex;
   flex-flow: column;
   border-bottom: 1px solid var(--border);
 }
-aside .aside-top img {
-  width: 25px;
+aside .aside img {
+  width: 20px;
   height: 20px;
 }
-aside .aside-top div {
+aside .aside .subs-profil {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--seconde);
+}
+aside .aside div {
   display: flex;
   flex-flow: row;
   align-items: center;
 }
-aside .aside-top div img, aside .aside-top div i, aside .aside-top div p {
-  margin: 1.2rem 1.8rem;
+aside .aside div img, aside .aside div i, aside .aside div p, aside .aside div .subs-profil {
+  margin: 1rem 1.8rem;
 }
-aside .aside-top div:last-child {
+aside .aside div:last-child {
   margin-bottom: 1rem;
 }
 

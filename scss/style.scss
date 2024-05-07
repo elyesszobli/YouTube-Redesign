@@ -1,6 +1,7 @@
 @use "reset" as *;
 @use "base" as *;
 @use "variable" as *;
+@use "classes" as *;
 
 header{
     .header-container{
@@ -110,27 +111,37 @@ header{
 
 aside{
     grid-area: aside;
-    .aside-top{
+    h3{
+        padding: 0rem 2rem;
+    }
+    .aside{
         display: flex;
         flex-flow: column;
         
         border-bottom: 1px solid var(--border);
         img{
-            width: 25px;
+            width: 20px;
             height: 20px;
+        }
+        .subs-profil{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: var(--seconde);
         }
         div{
             display: flex;
             flex-flow: row;
             align-items: center;
-            img , i , p{
-                margin: 1.2rem 1.8rem;
+            img , i , p , .subs-profil{
+                margin: 1rem 1.8rem;
             }
         }
         div:last-child{
             margin-bottom: 1rem;
         }
     }
+    
 }
 main{
     grid-area: main;
