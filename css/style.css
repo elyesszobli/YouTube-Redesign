@@ -29,6 +29,7 @@ ul {
 
 a {
   color: var(--text);
+  margin: 0;
   text-decoration: none;
 }
 
@@ -61,6 +62,10 @@ img {
 .first {
   background: var(--text) !important;
   color: var(--seconde) !important;
+}
+
+.select {
+  background: var(--seconde);
 }
 
 header .header-container {
@@ -154,6 +159,7 @@ aside h3 {
 aside .aside {
   display: flex;
   flex-flow: column;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
 }
 aside .aside img {
@@ -171,12 +177,14 @@ aside .aside div {
   display: flex;
   flex-flow: row;
   align-items: center;
+  border-radius: 7px;
+  margin-right: 1.5rem;
 }
 aside .aside div img, aside .aside div i, aside .aside div p {
   margin: 1rem 1.8rem;
 }
-aside .aside div:last-child {
-  margin-bottom: 1rem;
+aside .aside div:hover {
+  background: var(--seconde);
 }
 
 main {
@@ -191,6 +199,10 @@ main .liste-filtre ul li {
   background: var(--seconde);
   padding: 0.7rem 1rem;
   border-radius: 7px;
+  transition: all 0.7s;
+}
+main .liste-filtre ul li:hover {
+  background: #555;
 }
 main .videos-container {
   padding: 1.2rem;
@@ -214,6 +226,7 @@ main .videos-container .video-content .description {
 }
 main .videos-container .video-content .description .profil {
   margin: 1rem;
+  padding: 1rem;
 }
 main .videos-container .video-content .description .desc-video {
   padding: 0 1rem;

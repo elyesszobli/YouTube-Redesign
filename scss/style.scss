@@ -112,6 +112,8 @@ aside{
         display: flex;
         flex-flow: column;
         
+        padding-bottom: 1.5rem;
+        
         border-bottom: 1px solid var(--border);
         img{
             width: 20px;
@@ -128,14 +130,19 @@ aside{
             display: flex;
             flex-flow: row;
             align-items: center;
+            border-radius: 7px;
+            margin-right: 1.5rem;
             img , i , p {
                 margin: 1rem 1.8rem;
             }
+            &:hover{
+                background: var(--seconde);
+            }
 
         }
-        div:last-child{
-            margin-bottom: 1rem;
-        }
+        // div:last-child{
+        //     margin-bottom: 1rem;
+        // }
     }
     
 }
@@ -151,6 +158,10 @@ main{
                 background: var(--seconde);
                 padding: 0.7rem 1rem;
                 border-radius: 7px;
+                transition: all 0.7s;
+                &:hover{
+                    background: #555;
+                }
             }
             
             
@@ -176,6 +187,7 @@ main{
                 flex-flow: row;
                 .profil{
                     margin: 1rem;
+                    padding: 1rem;
                 }
                 .desc-video{
                     padding: 0 1rem;
