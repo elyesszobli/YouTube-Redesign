@@ -106,6 +106,7 @@ header{
     min-height: 100vh;
     grid-template-columns: 250px auto;
     grid-template-areas: "aside main";
+    padding: 1rem;
 
 }
 
@@ -145,4 +146,20 @@ aside{
 }
 main{
     grid-area: main;
+    .liste-filtre {
+        
+        ul{
+            display: flex ;
+            flex-flow: row;
+            li{
+                margin: 0rem 1rem;
+                background: var(--seconde);
+                padding: 0.7rem 1rem;
+                border-radius: 7px;
+            }
+            
+            
+        }
+        
+    }
 }
